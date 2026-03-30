@@ -110,6 +110,13 @@ namespace EnhancedFramework.Combat {
         }
 
         /// <summary>
+        /// Get if this object current health is equal to its max value.
+        /// </summary>
+        public bool IsFullLife {
+            get { return health == MaxHealth; }
+        }
+
+        /// <summary>
         /// Reduces inflicted damages up to this percentage value.
         /// </summary>
         public float Armor {
